@@ -464,3 +464,173 @@ ctu-ground/
 ├── grove.js            (Chat logic)
 ├── playground.js       (Activities logic)
 └── README.md
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏛️ CTU Ground · First Gen Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🏛️</span>
+                <span class="brand-text">CTU Ground</span>
+                <span class="brand-sub">First Gen Club</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">🏠 Home</a>
+                <a href="garden.html">🌻 Garden</a>
+                <a href="grove.html">💬 Grove</a>
+                <a href="playground.html">🎮 Playground</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>🌱 Welcome to <span class="highlight">CTU Ground</span></h1>
+            <p class="hero-tagline">"The root you might say, so we as the <strong>first generation student experience club</strong>, can always be as ONE."</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-number" id="heroFlowers">0</span>
+                    <span class="stat-label">🌻 First-Gen Flowers</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" id="heroMembers">0</span>
+                    <span class="stat-label">👥 First-Gen Voices</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" id="heroMessages">0</span>
+                    <span class="stat-label">💬 First-Gen Stories</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="garden.html" class="btn-primary">🌱 Plant Your Flower</a>
+                <a href="grove.html" class="btn-secondary">💬 Join the Grove</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-flowers">
+                <span>🌸</span>
+                <span>🌻</span>
+                <span>🌺</span>
+                <span>🌷</span>
+                <span>🌼</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MISSION ===== -->
+    <section class="mission">
+        <h2>🏛️ Our Mission as First-Gen Students</h2>
+        <div class="mission-grid">
+            <div class="mission-card">
+                <div class="mission-icon">🌱</div>
+                <h3>First Generation</h3>
+                <p>We are the first in our families to pursue higher education. We lead the way.</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">🌻</div>
+                <h3>Growth Together</h3>
+                <p>Every flower is different, yet rooted in the same soil—community, support, and shared context.</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">🏛️</div>
+                <h3>Legacy</h3>
+                <p>Building a foundation for first-gen students, alumni, and generations to come.</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">🤝</div>
+                <h3>Community</h3>
+                <p>A space where first-gen students can connect, share, and grow together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUICK LINKS ===== -->
+    <section class="quick-links">
+        <h2>🌿 Explore CTU Ground</h2>
+        <div class="link-grid">
+            <a href="garden.html" class="link-card garden-card">
+                <span class="link-icon">🌻</span>
+                <span class="link-title">Digital Garden</span>
+                <span class="link-desc">Plant your flower and share your first-gen story</span>
+                <span class="link-arrow">→</span>
+            </a>
+            <a href="grove.html" class="link-card grove-card">
+                <span class="link-icon">💬</span>
+                <span class="link-title">The Grove</span>
+                <span class="link-desc">Connect with fellow first-gen students</span>
+                <span class="link-arrow">→</span>
+            </a>
+            <a href="playground.html" class="link-card playground-card">
+                <span class="link-icon">🎮</span>
+                <span class="link-title">The Playground</span>
+                <span class="link-desc">Activities and reflections for first-gen growth</span>
+                <span class="link-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FIRST-GEN ANNOUNCEMENTS ===== -->
+    <section class="announcements">
+        <h2>📢 First-Gen Announcements</h2>
+        <div class="announcement-list" id="announcementList">
+            <div class="announcement-item">
+                <span class="announcement-date">Today</span>
+                <p>🌱 Welcome to CTU Ground! Plant your flower and join the first-gen community.</p>
+            </div>
+            <div class="announcement-item">
+                <span class="announcement-date">This Week</span>
+                <p>🌻 First-Gen Meetup – Friday at 5pm in the Student Union</p>
+            </div>
+            <div class="announcement-item">
+                <span class="announcement-date">Ongoing</span>
+                <p>🏛️ "The First Generation Student Experience Club" – We are the root that continues to grow.</p>
+            </div>
+        </div>
+        <button class="btn-add-announcement" id="addAnnouncementBtn">➕ Add Announcement</button>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span>🏛️ CTU Ground</span>
+                <p>First Generation Student Experience Club</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="garden.html">Garden</a>
+                <a href="grove.html">Grove</a>
+                <a href="playground.html">Playground</a>
+            </div>
+            <div class="footer-credit">
+                <p>🌱 Made by <strong>Suzanne Michelle Sellers Damons</strong></p>
+                <p class="footer-tagline">"Growth is individual and collective—every flower is different, yet rooted in the same soil."</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function updateHeroStats() {
+            const garden = JSON.parse(localStorage.getItem('sharedDigitalGarden') || '[]');
+            const grove = JSON.parse(localStorage.getItem('groveMessages') || '[]');
+            document.getElementById('heroFlowers').textContent = garden.length;
+            document.getElementById('heroMembers').textContent = garden.length || '0';
+            document.getElementById('heroMessages').textContent = grove.length;
+        }
+        updateHeroStats();
+        window.addEventListener('storage', updateHeroStats);
+    </script>
+</body>
+</html>
